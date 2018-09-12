@@ -14,6 +14,8 @@ public class calculator {
     System.out.println("введите выражение");
     collectIT();
     calcIt();
+        System.out.println("ответ:");
+        System.out.println(numbers);
     }
     void calcIt(){
         while (numbers.size()>1){
@@ -50,8 +52,6 @@ public class calculator {
             operators.add(var);
             operators=clearSpaces(operators);
         }
-        System.out.println(numbers);
-        System.out.println(operators);
     }
     String clearSpaces(String exp){
         exp = exp.replace(" ","");
@@ -71,9 +71,9 @@ public class calculator {
         numbers.remove(pos);
         numbers.add(pos,var);
         operators.remove(pos);
-        System.out.println(var);
+     /*   System.out.println(var);
         System.out.println(numbers);
-        System.out.println(operators);
+        System.out.println(operators);*/
     }
     void division(int pos){
         Double var = numbers.get(pos)/numbers.get(pos+1);
@@ -81,9 +81,9 @@ public class calculator {
         numbers.remove(pos);
         numbers.add(pos,var);
         operators.remove(pos);
-        System.out.println(var);
+      /*  System.out.println(var);
         System.out.println(numbers);
-        System.out.println(operators);
+        System.out.println(operators);*/
     }
     void addition(int pos){
         Double var = numbers.get(pos)+numbers.get(pos+1);
@@ -91,9 +91,9 @@ public class calculator {
         numbers.remove(pos);
         numbers.add(pos,var);
         operators.remove(pos);
-        System.out.println(var);
+  /*      System.out.println(var);
         System.out.println(numbers);
-        System.out.println(operators);
+        System.out.println(operators);*/
     }
     void subtraction(int pos){
         Double var = numbers.get(pos)-numbers.get(pos+1);
@@ -101,8 +101,8 @@ public class calculator {
         numbers.remove(pos);
         numbers.add(pos,var);
         operators.remove(pos);
-        System.out.println(var);
+   /*     System.out.println(var);
         System.out.println(numbers);
-        System.out.println(operators);
+        System.out.println(operators);*/
     }
 }
