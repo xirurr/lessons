@@ -135,7 +135,7 @@ public class HomeWork_4 {
                     buttonO.add(map[varbt.getposy()][varbt.getposx()]);
                     break;
             }
-            if ((boolean)checkWin(buttonX)[1]){
+            if ((boolean)checkWin(buttonX)[1]2){
                 for (button var:(ArrayList<button>)checkWin(buttonX)[0]){
                     setWinColor(var, Color.RED);
                 }
