@@ -1,5 +1,7 @@
 package lesson_4;
 
+import javafx.util.Pair;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -80,7 +82,7 @@ public class HomeWork_4 {
         frame.pack();
     }
 
-    
+
     void AIturn(){
         int r[] =aiClever();
         while (!hod(map[r[0]][r[1]],"O"))
@@ -88,8 +90,8 @@ public class HomeWork_4 {
         hod(map[r[0]][r[1]],"O");
             r =aiClever();
         }
-        if ((boolean)checkWin(buttonO)[1]){
-            for (button var:(ArrayList<button>)checkWin(buttonO)[0]){
+        if (checkWin(buttonO).getKey()){
+            for (button var:checkWin(buttonO).getValue()){
                 setWinColor(var, Color.BLUE);
             }
             System.out.println("компьютер выйграл");
@@ -101,7 +103,7 @@ public class HomeWork_4 {
                 ArrayList<button> var77 = new ArrayList<>(buttonX);
                 if (!buttonX.contains(map[i][i1])&&!buttonO.contains(map[i][i1])) {
                     var77.add(map[i][i1]);
-                    if ((boolean)checkWin(var77)[1]) {
+                    if (checkWin(var77).getKey()) {
                         int r[] = {i, i1};
                         System.out.println(Arrays.toString(r));
                         return r;
@@ -135,8 +137,8 @@ public class HomeWork_4 {
                     buttonO.add(map[varbt.getposy()][varbt.getposx()]);
                     break;
             }
-            if ((boolean)checkWin(buttonX)[1]2){
-                for (button var:(ArrayList<button>)checkWin(buttonX)[0]){
+            if (checkWin(buttonX).getKey()){
+                for (button var:checkWin(buttonX).getValue()){
                     setWinColor(var, Color.RED);
                 }
                 System.out.println("Ты выйграл");
@@ -147,14 +149,15 @@ public class HomeWork_4 {
             return false;
         }
     }
-    Object[] checkWin(ArrayList<button> buttonXO) {
+
+    Pair<Boolean,ArrayList<button>> checkWin(ArrayList<button> buttonXO) {
         int needToWin = 3;
-       Object varObjects[] = new Object[2];
-       varObjects[1]=false;
+        Boolean win = false;
+        ArrayList<button> var2=null;
+        Pair<Boolean,ArrayList<button>> pairWin = new Pair<>(win,var2);
         if (buttonXO.size()<needToWin){
-            return varObjects;
+            return pairWin;
         }
-        ArrayList<button> var2;
 
         for (button var3 : buttonXO) {
             var2 = buttonXO.stream().filter(o -> o.getposx() == var3.getposx()
@@ -163,9 +166,9 @@ public class HomeWork_4 {
                     .collect(Collectors.toCollection(ArrayList::new));
             if (var2.size() == needToWin) {
                 System.out.println("победа1");
-                varObjects[1]=true;
-                varObjects[0]=var2;
-                return varObjects;
+                win = true;
+                pairWin = new Pair<>(win,var2);
+                return pairWin;
             }
         }
 
@@ -176,9 +179,9 @@ public class HomeWork_4 {
                     .collect(Collectors.toCollection(ArrayList::new));
             if (var2.size() == needToWin) {
                 System.out.println("победа2");
-                varObjects[1]=true;
-                varObjects[0]=var2;
-                return varObjects;
+                win = true;
+                pairWin = new Pair<>(win,var2);
+                return pairWin;
             }
         }
         for (button var3 : buttonXO) {
@@ -188,9 +191,9 @@ public class HomeWork_4 {
                     .collect(Collectors.toCollection(ArrayList::new));
             if (var2.size() == needToWin) {
                 System.out.println("победа3");
-                varObjects[1]=true;
-                varObjects[0]=var2;
-                return varObjects;
+                win = true;
+                pairWin = new Pair<>(win,var2);
+                return pairWin;
             }
         }
 
@@ -201,13 +204,15 @@ public class HomeWork_4 {
                     .collect(Collectors.toCollection(ArrayList::new));
             if (var2.size()==needToWin) {
                 System.out.println("победа4");
-                varObjects[1]=true;
-                varObjects[0]=var2;
-                return varObjects;
+                win = true;
+                pairWin = new Pair<>(win,var2);
+                return pairWin;
 
             }
             }
-        return varObjects;
+        win = true;
+        pairWin = new Pair<>(win,var2);
+        return pairWin;
         }
 
 
