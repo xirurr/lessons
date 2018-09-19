@@ -210,7 +210,7 @@ public class HomeWork_4 {
 
             }
             }
-        win = true;
+   //     win = true;
         pairWin = new Pair<>(win,var2);
         return pairWin;
         }
