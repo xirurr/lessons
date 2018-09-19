@@ -90,8 +90,9 @@ public class HomeWork_4 {
         hod(map[r[0]][r[1]],"O");
             r =aiClever();
         }
-        if (checkWin(buttonO).getKey()){
-            for (button var:checkWin(buttonO).getValue()){
+        if (new isWinAble(buttonO).isWin()){
+            for (button var:new isWinAble(buttonO).getVarMassive()){
+                System.out.println("развемер"+new isWinAble(buttonO).getVarMassive().size());
                 setWinColor(var, Color.BLUE);
             }
             System.out.println("компьютер выйграл");
@@ -103,7 +104,7 @@ public class HomeWork_4 {
                 ArrayList<button> var77 = new ArrayList<>(buttonX);
                 if (!buttonX.contains(map[i][i1])&&!buttonO.contains(map[i][i1])) {
                     var77.add(map[i][i1]);
-                    if (checkWin(var77).getKey()) {
+                    if (new isWinAble(var77).isWin()) {
                         int r[] = {i, i1};
                         System.out.println(Arrays.toString(r));
                         return r;
@@ -137,8 +138,8 @@ public class HomeWork_4 {
                     buttonO.add(map[varbt.getposy()][varbt.getposx()]);
                     break;
             }
-            if (checkWin(buttonX).getKey()){
-                for (button var:checkWin(buttonX).getValue()){
+            if (new isWinAble(buttonX).isWin()){
+                for (button var:new isWinAble(buttonX).getVarMassive()){
                     setWinColor(var, Color.RED);
                 }
                 System.out.println("Ты выйграл");
@@ -150,69 +151,153 @@ public class HomeWork_4 {
         }
     }
 
-    Pair<Boolean,ArrayList<button>> checkWin(ArrayList<button> buttonXO) {
-        int needToWin = 3;
-        Boolean win = false;
-        ArrayList<button> var2=null;
-        Pair<Boolean,ArrayList<button>> pairWin = new Pair<>(win,var2);
-        if (buttonXO.size()<needToWin){
-            return pairWin;
-        }
 
-        for (button var3 : buttonXO) {
-            var2 = buttonXO.stream().filter(o -> o.getposx() == var3.getposx()
-                    && o.getposy() >= var3.getposy()
-                    && o.getposy() < var3.getposy() + needToWin)
-                    .collect(Collectors.toCollection(ArrayList::new));
-            if (var2.size() == needToWin) {
-                System.out.println("победа1");
-                win = true;
-                pairWin = new Pair<>(win,var2);
-                return pairWin;
-            }
-        }
+        class isWinAble{
+        ArrayList<button> buttonXO;
+        ArrayList<button> varMassive;
+        boolean win;
 
-        for (button var3 : buttonXO) {
-            var2 = buttonXO.stream().filter(o -> o.getposy() == var3.getposy()
-                    && o.getposx() >= var3.getposx()
-                    && o.getposx() < var3.getposx() + needToWin)
-                    .collect(Collectors.toCollection(ArrayList::new));
-            if (var2.size() == needToWin) {
-                System.out.println("победа2");
-                win = true;
-                pairWin = new Pair<>(win,var2);
-                return pairWin;
+            public ArrayList<button> getVarMassive() {
+                return varMassive;
             }
-        }
-        for (button var3 : buttonXO) {
-            var2 = buttonXO.stream().filter(o -> o.getposy()-o.getposx() == var3.getposy()-var3.getposx()
-                    && o.getposy() >= var3.getposy()
-                    && o.getposy() < var3.getposy() + needToWin)
-                    .collect(Collectors.toCollection(ArrayList::new));
-            if (var2.size() == needToWin) {
-                System.out.println("победа3");
-                win = true;
-                pairWin = new Pair<>(win,var2);
-                return pairWin;
-            }
-        }
 
-        for (button var3 : buttonXO) {
-            var2 = buttonXO.stream().filter(o -> o.getposy()+o.getposx() == var3.getposy()+var3.getposx()
-                    && o.getposx() >= var3.getposx()
-                    && o.getposx() < var3.getposx() + needToWin)
-                    .collect(Collectors.toCollection(ArrayList::new));
-            if (var2.size()==needToWin) {
-                System.out.println("победа4");
-                win = true;
-                pairWin = new Pair<>(win,var2);
-                return pairWin;
+            public boolean isWin() {
+                return win;
+            }
+
+            public isWinAble(ArrayList<button> vrm) {
+                this.buttonXO = vrm;
+                //this.varMassive = vrm;
+                 int needToWin = 3;
+                    win = false;
+
+                    if (!win) {
+                        for (button var3 : buttonXO) {
+                            varMassive = buttonXO.stream().filter(o -> o.getposx() == var3.getposx()
+                                    && o.getposy() >= var3.getposy()
+                                    && o.getposy() < var3.getposy() + needToWin)
+                                    .collect(Collectors.toCollection(ArrayList::new));
+                            if (varMassive.size() == needToWin) {
+                                System.out.println("размер до:  "+varMassive.size());
+                                System.out.println("победа1");
+                                win = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (!win) {
+                        for (button var3 : buttonXO) {
+                            varMassive = buttonXO.stream().filter(o -> o.getposy() == var3.getposy()
+                                    && o.getposx() >= var3.getposx()
+                                    && o.getposx() < var3.getposx() + needToWin)
+                                    .collect(Collectors.toCollection(ArrayList::new));
+                            if (varMassive.size() == needToWin) {
+                                System.out.println("размер до:  "+varMassive.size());
+                                System.out.println("победа2");
+                                win = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (!win) {
+                        for (button var3 : buttonXO) {
+                            varMassive = buttonXO.stream().filter(o -> o.getposy() - o.getposx() == var3.getposy() - var3.getposx()
+                                    && o.getposy() >= var3.getposy()
+                                    && o.getposy() < var3.getposy() + needToWin)
+                                    .collect(Collectors.toCollection(ArrayList::new));
+                            if (varMassive.size() == needToWin) {
+                                System.out.println("размер до:  "+varMassive.size());
+                                System.out.println("победа3");
+                                win = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (!win) {
+                        for (button var3 : buttonXO) {
+                            varMassive = buttonXO.stream().filter(o -> o.getposy() + o.getposx() == var3.getposy() + var3.getposx()
+                                    && o.getposx() >= var3.getposx()
+                                    && o.getposx() < var3.getposx() + needToWin)
+                                    .collect(Collectors.toCollection(ArrayList::new));
+                            if (varMassive.size() == needToWin) {
+                                System.out.println("размер до:  "+varMassive.size());
+                                System.out.println("победа4");
+                                win = true;
+                                break;
+                            }
+                        }
+
+                }
+
+
+
+
+
 
             }
+
+
+      boolean checkWin(){
+          int needToWin = 3;
+          win = false;
+          if (buttonXO.size()<needToWin){
+              return win;
+          }
+
+        if (!win) {
+    for (button var3 : buttonXO) {
+        varMassive = buttonXO.stream().filter(o -> o.getposx() == var3.getposx()
+                && o.getposy() >= var3.getposy()
+                && o.getposy() < var3.getposy() + needToWin)
+                .collect(Collectors.toCollection(ArrayList::new));
+        if (varMassive.size() == needToWin) {
+            System.out.println("победа1");
+            win = true;
+            return win;
+        }
+    }
+        }
+          if (!win) {
+              for (button var3 : buttonXO) {
+                  varMassive = buttonXO.stream().filter(o -> o.getposy() == var3.getposy()
+                          && o.getposx() >= var3.getposx()
+                          && o.getposx() < var3.getposx() + needToWin)
+                          .collect(Collectors.toCollection(ArrayList::new));
+                  if (varMassive.size() == needToWin) {
+                      System.out.println("победа2");
+                      win = true;
+                      return win;
+                  }
+              }
+          }
+          if (!win) {
+              for (button var3 : buttonXO) {
+                  varMassive = buttonXO.stream().filter(o -> o.getposy() - o.getposx() == var3.getposy() - var3.getposx()
+                          && o.getposy() >= var3.getposy()
+                          && o.getposy() < var3.getposy() + needToWin)
+                          .collect(Collectors.toCollection(ArrayList::new));
+                  if (varMassive.size() == needToWin) {
+                      System.out.println("победа3");
+                      win = true;
+                      return win;
+                  }
+              }
+          }
+          if (!win) {
+              for (button var3 : buttonXO) {
+                  varMassive = buttonXO.stream().filter(o -> o.getposy() + o.getposx() == var3.getposy() + var3.getposx()
+                          && o.getposx() >= var3.getposx()
+                          && o.getposx() < var3.getposx() + needToWin)
+                          .collect(Collectors.toCollection(ArrayList::new));
+                  if (varMassive.size() == needToWin) {
+                      System.out.println("победа4");
+                      win = true;
+                      return win;
+                  }
+              }
+}return win;
             }
-   //     win = true;
-        pairWin = new Pair<>(win,var2);
-        return pairWin;
+
         }
 
 
