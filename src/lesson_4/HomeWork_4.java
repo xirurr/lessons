@@ -48,6 +48,7 @@ public class HomeWork_4 {
         frame.pack();
 
         jb1.addActionListener( (e) -> createButtonsMap());
+
         sizeField.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode()==10) {
