@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="lessons" default="all">
-  
-  
+
+
   <property file="build.properties"/>
   <!-- Uncomment the following property if no tests compilation is needed -->
-  <!-- 
+  <!--
   <property name="skip.tests" value="true"/>
    -->
-  
+
   <!-- Compiler options -->
-  
+
   <property name="compiler.debug" value="on"/>
   <property name="compiler.generate.no.warnings" value="off"/>
   <property name="compiler.args" value=""/>
@@ -51,9 +51,9 @@
     <exclude name="**/?*.clj"/>
     <exclude name="**/?*.aj"/>
   </patternset>
-  
+
   <!-- JDK definitions -->
-  
+
   <property name="jdk.bin.10" value="${jdk.home.10}/bin"/>
   <path id="jdk.classpath.10">
     <fileset dir="${jdk.home.10}">
@@ -158,68 +158,68 @@
       <include name="../jdk-10.0.2!/oracle.net"/>
     </fileset>
   </path>
-  
+
   <property name="project.jdk.home" value="${jdk.home.10}"/>
   <property name="project.jdk.bin" value="${jdk.bin.10}"/>
   <property name="project.jdk.classpath" value="jdk.classpath.10"/>
-  
+
   <!-- Modules -->
-  
-  
+
+
   <!-- Module lessons -->
-  
+
   <dirname property="module.lessons.basedir" file="${ant.file}"/>
-  
-  
+
+
   <property name="module.jdk.home.lessons" value="${jdk.home.10}"/>
   <property name="module.jdk.bin.lessons" value="${jdk.bin.10}"/>
   <property name="module.jdk.classpath.lessons" value="jdk.classpath.10"/>
-  
+
   <property name="compiler.args.lessons" value="-encoding UTF-8 -source 9 -target 9 ${compiler.args}"/>
-  
+
   <property name="lessons.output.dir" value="${module.lessons.basedir}/out/production/lessons"/>
   <property name="lessons.testoutput.dir" value="${module.lessons.basedir}/out/test/lessons"/>
-  
+
   <path id="lessons.module.bootclasspath">
     <!-- Paths to be included in compilation bootclasspath -->
   </path>
-  
+
   <path id="lessons.module.production.classpath">
     <path refid="${module.jdk.classpath.lessons}"/>
   </path>
-  
+
   <path id="lessons.runtime.production.module.classpath">
     <pathelement location="${lessons.output.dir}"/>
   </path>
-  
+
   <path id="lessons.module.classpath">
     <path refid="${module.jdk.classpath.lessons}"/>
     <pathelement location="${lessons.output.dir}"/>
   </path>
-  
+
   <path id="lessons.runtime.module.classpath">
     <pathelement location="${lessons.testoutput.dir}"/>
     <pathelement location="${lessons.output.dir}"/>
   </path>
-  
-  
+
+
   <patternset id="excluded.from.module.lessons">
     <patternset refid="ignored.files"/>
   </patternset>
-  
+
   <patternset id="excluded.from.compilation.lessons">
     <patternset refid="excluded.from.module.lessons"/>
   </patternset>
-  
+
   <path id="lessons.module.sourcepath">
     <dirset dir="${module.lessons.basedir}">
       <include name="src"/>
     </dirset>
   </path>
-  
-  
+
+
   <target name="compile.module.lessons" depends="compile.module.lessons.production,compile.module.lessons.tests" description="Compile module lessons"/>
-  
+
   <target name="compile.module.lessons.production" description="Compile module lessons; production classes">
     <mkdir dir="${lessons.output.dir}"/>
     <javac destdir="${lessons.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.lessons}/javac">
@@ -229,7 +229,7 @@
       <src refid="lessons.module.sourcepath"/>
       <patternset refid="excluded.from.compilation.lessons"/>
     </javac>
-    
+
     <copy todir="${lessons.output.dir}">
       <fileset dir="${module.lessons.basedir}/src">
         <patternset refid="compiler.resources"/>
@@ -237,21 +237,21 @@
       </fileset>
     </copy>
   </target>
-  
+
   <target name="compile.module.lessons.tests" depends="compile.module.lessons.production" description="compile module lessons; test classes" unless="skip.tests"/>
-  
+
   <target name="clean.module.lessons" description="cleanup module">
     <delete dir="${lessons.output.dir}"/>
     <delete dir="${lessons.testoutput.dir}"/>
   </target>
-  
+
   <target name="init" description="Build initialization">
     <!-- Perform any build initialization in this target -->
   </target>
-  
+
   <target name="clean" depends="clean.module.lessons" description="cleanup all"/>
-  
+
   <target name="build.modules" depends="init, clean, compile.module.lessons" description="build all modules"/>
-  
+
   <target name="all" depends="build.modules" description="build all"/>
 </project>
