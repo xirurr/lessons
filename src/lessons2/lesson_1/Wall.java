@@ -1,4 +1,4 @@
-package Lesson_1.Marathon;
+package lessons2.lesson_1;
 
 public class Wall extends Obstacle {
     int height;
