@@ -6,69 +6,24 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list id="7708400e-1b7f-4d46-84be-e8673dd62ae7" name="Крестики-нолики." comment="Крестики-нолики.&#10;&#10;(cherry picked from commit 598894a)">
-      <changelist_data name="xirurr" email="xirurr@gmail.com" date="1538416244000" />
-    </list>
     <list default="true" id="68b22740-c763-4389-b4a0-f8707db489f7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/Lesson_8/GameWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/Lesson_8/Map$oneObject$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/Lesson_8/Map$oneObject.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/Lesson_8/Map.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/Lesson_8/StartNewGameWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/Lesson_8/TicTacToe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/Lesson_8/theGame$coords.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/Lesson_8/theGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_1/HomeWork.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_2/HomeWork.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_3_1/HomeWork3_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_3_1/calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_4/HomeWork_4$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_4/HomeWork_4$button$turn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_4/HomeWork_4$button.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_4/HomeWork_4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_5/lesson_5$worker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_5/lesson_5.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_6/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_6/Cat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_6/Dog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_6/HomeWork_6.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_6/WorkWithString.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_7/Cat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_7/FIO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_7/HomeWork_7.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_7/JFrameN.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_7/JTextFieldN.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lessons/lesson_7/Plate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Lesson_8/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Lesson_8/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Lesson_8/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Lesson_8/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Lesson_8/StartNewGameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Lesson_8/StartNewGameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Lesson_8/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Lesson_8/TicTacToe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Lesson_8/theGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Lesson_8/theGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/lesson_1/HomeWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/lesson_1/HomeWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/lesson_2/HomeWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/lesson_2/HomeWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/lesson_3_1/HomeWork3_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/lesson_3_1/HomeWork3_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/lesson_3_1/calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/lesson_3_1/calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/lesson_4/HomeWork_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/lesson_4/HomeWork_4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/lesson_5/lesson_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/lesson_5/lesson_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/lesson_6/HomeWork_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/lesson_6/HomeWork_6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/lesson_6/WorkWithString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/lesson_6/WorkWithString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/lesson_7/FIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/lesson_7/FIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/lesson_7/HomeWork_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/lesson_7/HomeWork_7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_1/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_1/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_1/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_1/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_1/Competitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_1/Competitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_1/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_1/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_1/Cross.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_1/Cross.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_1/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_1/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_1/MainMarathon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_1/MainMarathon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_1/Obstacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_1/Obstacle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_1/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_1/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_1/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_1/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_1/Water.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_1/Water.java" afterDir="false" />
+    </list>
+    <list id="7708400e-1b7f-4d46-84be-e8673dd62ae7" name="Крестики-нолики." comment="Крестики-нолики.&#10;&#10;(cherry picked from commit 598894a)">
+      <changelist_data name="xirurr" email="xirurr@gmail.com" date="1538416244000" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,7 +42,7 @@
       <file leaf-file-name="MainMarathon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/MainMarathon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="-2">
               <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -99,7 +54,7 @@
       <file leaf-file-name="Course.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/Course.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="233">
               <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -115,8 +70,8 @@
       <file leaf-file-name="Team.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/Team.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="153">
+              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
               <folding>
                 <element signature="method#Team#0;class#Team#0" />
                 <element signature="e#483#484#0" expanded="true" />
@@ -161,8 +116,8 @@
       <file leaf-file-name="Cat.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/Cat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="4" column="123" selection-start-line="4" selection-start-column="123" selection-end-line="4" selection-end-column="123" />
             </state>
           </provider>
         </entry>
@@ -416,7 +371,7 @@
       <workItem from="1539428901854" duration="1270000" />
       <workItem from="1539432696067" duration="702000" />
       <workItem from="1539453693929" duration="588000" />
-      <workItem from="1539867798869" duration="12673000" />
+      <workItem from="1539867798869" duration="15142000" />
     </task>
     <task id="LOCAL-00001" summary="выполнил дз первого урока">
       <created>1536004871963</created>
@@ -429,7 +384,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24611000" />
+    <option name="totallyTimeSpent" value="27080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -808,45 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/MainMarathon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ObstaclesSet#1;class#ObstaclesSet#0" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-            <element signature="method#runIt#1;class#Course#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="method#Team#0;class#Team#0" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="method#whoComplete#0;class#Team#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -895,10 +811,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+          <folding>
+            <element signature="method#Team#0;class#Team#0" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="method#whoComplete#0;class#Team#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ObstaclesSet#1;class#ObstaclesSet#0" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="method#runIt#1;class#Course#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/MainMarathon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_1/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="4" column="123" selection-start-line="4" selection-start-column="123" selection-end-line="4" selection-end-column="123" />
         </state>
       </provider>
     </entry>
