@@ -219,7 +219,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.enumWork">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="10" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -271,6 +271,19 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="enumWork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="10" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_2.enumWork" />
+      <module name="lessons" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lessons2.lesson_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -314,9 +327,11 @@
       <item itemvalue="Application.calculator" />
       <item itemvalue="Application.MainMarathon" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.enumWork" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.enumWork" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainMarathon" />
         <item itemvalue="Application.calculator" />
