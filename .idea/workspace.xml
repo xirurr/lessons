@@ -6,12 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68b22740-c763-4389-b4a0-f8707db489f7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lessons2/lesson_5/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
     <list id="7708400e-1b7f-4d46-84be-e8673dd62ae7" name="Крестики-нолики." comment="Крестики-нолики.&#10;&#10;(cherry picked from commit 598894a)">
       <changelist_data name="xirurr" email="xirurr@gmail.com" date="1538416244000" />
+    </list>
+    <list default="true" id="68b22740-c763-4389-b4a0-f8707db489f7" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lessons2/lesson_6/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lessons2/lesson_6/Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lessons2/lesson_6/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lessons2/lesson_6/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,24 +44,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeWork_4.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson1/lesson_4/HomeWork_4.java">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="175" column="40" lean-forward="true" selection-start-line="175" selection-start-column="40" selection-end-line="175" selection-end-column="40" />
+            <state relative-caret-position="388">
+              <caret line="27" column="22" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="27" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_5/Main.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="121" column="19" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+            <state relative-caret-position="165">
+              <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
               <folding>
-                <element signature="method#counter#0;class#Main#0" />
-                <element signature="method#counterSim#0;class#Main#0" />
-                <element signature="method#checkSumm#0;class#Main#0" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Reader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="method#incomeReader#0;class#Reader#0" />
+                <element signature="method#run#0;class#Reader#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Writer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Writer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#outWriter#0;class#Writer#0" />
+                <element signature="method#run#0;class#Writer#0" />
               </folding>
             </state>
           </provider>
@@ -119,6 +150,12 @@
         <option value="$PROJECT_DIR$/src/lessons2/lesson_3/Passwords.java" />
         <option value="$PROJECT_DIR$/src/lesson1/Lesson_8/GameWindow.java" />
         <option value="$PROJECT_DIR$/src/lessons2/lesson_5/Main.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6/Main.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6/Server2.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6/Server.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6/Client.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6/Reader.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6/Writer.java" />
       </list>
     </option>
   </component>
@@ -138,10 +175,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-75" />
-    <option name="y" value="-21" />
-    <option name="width" value="1378" />
-    <option name="height" value="780" />
+    <option name="x" value="19" />
+    <option name="y" value="12" />
+    <option name="width" value="683" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -151,7 +188,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,6 +207,12 @@
               <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
               <item name="lessons" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lessons2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -177,13 +222,18 @@
               <item name="lessons2" type="462c0819:PsiDirectoryNode" />
               <item name="lesson_5" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lessons2" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_6" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Course" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,8 +255,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="lessons2.lesson_6" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="lesson2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lessons2.lesson_6" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\YandexDisk\GIT\lessons\src" />
@@ -226,7 +282,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="10" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_6.Client" />
+      <module name="lessons" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lessons2.lesson_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="10" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -236,6 +305,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lessons2.lesson_5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="10" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_6.Main" />
+      <module name="lessons" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lessons2.lesson_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -253,15 +335,15 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Phone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="10" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_3.Phone" />
+      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_6.Server" />
       <module name="lessons" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lessons2.lesson_3.*" />
+          <option name="PATTERN" value="lessons2.lesson_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -272,32 +354,6 @@
       <option name="MAIN_CLASS_NAME" value="lesson1.Lesson_8.TicTacToe" />
       <module name="lessons" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="Words" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="10" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_3.Words" />
-      <module name="lessons" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lessons2.lesson_3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="WordsBIgData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="10" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_3.WordsBIgData" />
-      <module name="lessons" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lessons2.lesson_3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="10" />
@@ -344,19 +400,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="Application.Words" />
-      <item itemvalue="Application.WordsBIgData" />
-      <item itemvalue="Application.Phone" />
       <item itemvalue="Application.Passwords" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Passwords" />
-        <item itemvalue="Application.Phone" />
-        <item itemvalue="Application.WordsBIgData" />
-        <item itemvalue="Application.Words" />
       </list>
     </recent_temporary>
   </component>
@@ -392,7 +448,8 @@
       <workItem from="1541174434747" duration="568000" />
       <workItem from="1541248100864" duration="14180000" />
       <workItem from="1541336422541" duration="1894000" />
-      <workItem from="1541420424413" duration="2184000" />
+      <workItem from="1541420424413" duration="7767000" />
+      <workItem from="1541626135789" duration="6416000" />
     </task>
     <task id="LOCAL-00001" summary="выполнил дз первого урока">
       <created>1536004871963</created>
@@ -405,14 +462,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77873000" />
+    <option name="totallyTimeSpent" value="89872000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="10" />
       <window_info anchor="bottom" id="TODO" order="13" weight="0.32922536" />
+      <window_info anchor="bottom" id="Messages" order="18" weight="0.33390412" />
       <window_info anchor="right" id="Palette&#9;" order="14" />
       <window_info id="Image Layers" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="11" />
@@ -420,26 +478,25 @@
       <window_info anchor="right" id="Maven Projects" order="15" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="16" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49848714" weight="0.25684932" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.49848714" visible="true" weight="0.25684932" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32876712" />
       <window_info id="Capture Tool" order="10" />
       <window_info id="Designer" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20045386" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.20347957" />
       <window_info anchor="right" id="Database" order="13" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.31849316" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info id="UI Designer" order="11" />
       <window_info anchor="right" id="Theme Preview" order="12" />
       <window_info id="Favorites" order="12" side_tool="true" />
       <window_info anchor="bottom" x="26" y="434" width="1322" height="227" id="Debug" order="5" weight="0.38869864" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="16" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="18" weight="0.33390412" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.31849316" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +561,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="101" />
+      <option name="time" value="102" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -512,13 +569,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lesson2/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson2/lesson_1/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson2/lesson_1.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson2/f.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Cat.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/Animal.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/Competitor.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/Obstacle.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/Wall.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/Water.java" />
@@ -743,19 +793,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson1/lesson_4/HomeWork_4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
+        <state relative-caret-position="-339">
           <caret line="175" column="40" lean-forward="true" selection-start-line="175" selection-start-column="40" selection-end-line="175" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/net/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1359">
+          <caret line="116" column="11" selection-start-line="116" selection-start-column="11" selection-end-line="116" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_5/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="121" column="19" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+        <state relative-caret-position="-136">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
+            <element signature="method#main#0;class#Main#0" />
             <element signature="method#counter#0;class#Main#0" />
-            <element signature="method#counterSim#0;class#Main#0" />
+            <element signature="method#counterMultySim#0;class#Main#0" />
             <element signature="method#checkSumm#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#outWriter#0;class#Writer#0" />
+            <element signature="method#run#0;class#Writer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="method#incomeReader#0;class#Reader#0" />
+            <element signature="method#run#0;class#Reader#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
