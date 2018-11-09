@@ -3,7 +3,7 @@ package lessons2.lesson_6;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Scanner;
+
 
 public class Server  {
   ServerSocket SS = null;
