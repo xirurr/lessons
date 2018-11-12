@@ -17,7 +17,7 @@ public class ConnectionWaiter {
         Socket sockA = SS.accept();
         System.out.println("соединение получено");
         executeIt.execute(new Server(sockA));
-        System.out.println("после егзекьюта");
+        System.out.println("поток создан");
       }
     } catch (Exception ex) {
       ex.printStackTrace();

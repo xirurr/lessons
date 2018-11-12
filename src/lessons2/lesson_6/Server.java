@@ -2,6 +2,7 @@ package lessons2.lesson_6;
 
 import java.io.*;
 import java.net.Socket;
+import java.net.SocketException;
 import java.sql.*;
 import java.util.List;
 import java.util.Vector;
@@ -14,9 +15,11 @@ public class Server implements Runnable {
   DataInputStream DIS;
   DataOutputStream DOS;
   static List<CClient> connectionList = new Vector<>();
+  CClient connectedClient = null;
 
   private static Connection connection;
   private static Statement stmt;
+  String name;
 
   public Server(Socket s) throws IOException {
     sockA = s;
@@ -29,19 +32,18 @@ public class Server implements Runnable {
     while (true) {
       for (int i = 3; i > 0; i--) {
         String var = DIS.readUTF();
-        System.out.println(var);
         Matcher m = p.matcher(var);
         if (m.matches()) {
           String[] loginpwd = var.split("!84AUTH");
           String login = loginpwd[1];
           String pwd = loginpwd[2];
           if (!auth(login, pwd)) {
-            DOS.writeUTF("tries left: " + (i - 1));
-          }
-          else return true;
+            DOS.writeUTF("!tries left: " + (i - 1));
+          } else return true;
           if (i - 1 == 0) {
-            DOS.writeUTF("bb");
-            System.exit(0);
+            DOS.writeUTF("!bb");
+            sockA.close();
+            return false;
           }
         }
       }
@@ -58,11 +60,13 @@ public class Server implements Runnable {
       try {
         ResultSet rs = stmt.executeQuery(sql);
         if (rs.next()) {
-          DOS.writeUTF(rs.getString(1) + " autorized");
-          connectionList.add(new CClient(sockA, rs.getString(1)));
+          DOS.writeUTF(rs.getString(1) + " !authorized");
+          name = rs.getString(1);
+          connectedClient = new CClient(sockA, rs.getString(1));
+          connectionList.add(connectedClient);
           return true;
         } else {
-          DOS.writeUTF("u are not authorized");
+          DOS.writeUTF("!u are not authorized");
           return false;
         }
       } catch (SQLException e) {
@@ -79,7 +83,7 @@ public class Server implements Runnable {
       String txt = DIS.readUTF();
       connectionList.forEach(o -> {
         try {
-          o.getDOS().writeUTF(txt);
+          o.getDOS().writeUTF(name + ":" + txt);
         } catch (IOException e) {
           e.printStackTrace();
         }
@@ -90,9 +94,17 @@ public class Server implements Runnable {
   @Override
   public void run() {
     try {
-      if (checkAUTH())
-        while (!sockA.isClosed()){
-        broadCast();}
+      if (checkAUTH()) {
+        while (!sockA.isClosed()) {
+          broadCast();
+        }
+      }
+    } catch (SocketException se) {
+      System.out.println("соединение завершено");
+      if (connectionList.contains(connectedClient)) {
+        connectionList.remove(connectedClient);
+        System.out.println("клиент удален");
+      }
     } catch (Exception e) {
       e.printStackTrace();
     }
