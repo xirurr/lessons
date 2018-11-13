@@ -1,4 +1,4 @@
-package lessons2.lesson_6;
+package lessons2.lesson_6_7;
 
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -11,8 +11,9 @@ public class ConnectionWaiter {
   public static void main(String[] args) {
     startServ();
   }
+
   static void startServ() {
-    try(ServerSocket SS = new ServerSocket(9000)) {
+    try (ServerSocket SS = new ServerSocket(9000)) {
       while (!SS.isClosed()) {
         Socket sockA = SS.accept();
         System.out.println("соединение получено");

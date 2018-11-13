@@ -1,4 +1,4 @@
-package lessons2.lesson_6;
+package lessons2.lesson_6_7;
 
 import java.io.*;
 import java.net.Socket;
@@ -6,6 +6,7 @@ import java.net.SocketException;
 import java.sql.*;
 import java.util.List;
 import java.util.Vector;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -15,11 +16,12 @@ public class Server implements Runnable {
   DataInputStream DIS;
   DataOutputStream DOS;
   static List<CClient> connectionList = new Vector<>();
+  static List<String> connectionListNames = new Vector<>();
+  String name;
   CClient connectedClient = null;
-
   private static Connection connection;
   private static Statement stmt;
-  String name;
+
 
   public Server(Socket s) throws IOException {
     sockA = s;
@@ -53,16 +55,21 @@ public class Server implements Runnable {
   boolean auth(String login, String pwd) {
     try {
       Class.forName("org.sqlite.JDBC");
-      connection = DriverManager.getConnection("jdbc:sqlite:D://YandexDisk//GIT//lesson_4//mainDB.db");
+      connection = DriverManager.getConnection("jdbc:sqlite:mainDB.db");
       stmt = connection.createStatement();
       String sql = String.format("SELECT nickname FROM account" +
               " WHERE name = '%s' AND pwd = '%s'", login, pwd);
       try {
         ResultSet rs = stmt.executeQuery(sql);
         if (rs.next()) {
-          DOS.writeUTF(rs.getString(1) + " !authorized");
+          if (connectionListNames.contains(rs.getString(1))) {
+            DOS.writeUTF("USER ALREADY AUTHORIZED");
+            return false;
+          }
+          DOS.writeUTF("!authorized " + rs.getString(1));
           name = rs.getString(1);
           connectedClient = new CClient(sockA, rs.getString(1));
+          connectionListNames.add(rs.getString(1));
           connectionList.add(connectedClient);
           return true;
         } else {
@@ -81,14 +88,49 @@ public class Server implements Runnable {
   void broadCast() throws IOException {
     while (true) {
       String txt = DIS.readUTF();
-      connectionList.forEach(o -> {
+      if (txt.indexOf("/") == 0 && txt.split(" ")[0].equals("/w")) {
+        whisper(txt);
+      } else
+        connectionList.forEach(o -> {
+          try {
+            o.getDOS().writeUTF(name + ":" + txt);
+          } catch (IOException e) {
+            e.printStackTrace();
+          }
+        });
+    }
+  }
+
+  void whisper(String whispTxt) {
+    whispTxt = whispTxt.replaceAll("\\s+", " ");
+    String pName = whispTxt.split(" ")[1];
+    String txt = whispTxt.replace("/w ", "");
+    txt = txt.replace(pName, "");
+    String finalTxt = txt;
+    final CClient[] recieverAndSender = new CClient[2];
+    connectionList.stream().filter(o -> o.getName().equals(pName)).forEach(c -> {
+      if (!c.getSockA().isClosed()) {
+        recieverAndSender[0] = c;
+      }
+    });
+    connectionList.stream().filter(o -> o.getName().equals(name)).forEach(c -> {
+      recieverAndSender[1] = c;
+      if (recieverAndSender[0] != null) {
         try {
-          o.getDOS().writeUTF(name + ":" + txt);
+          recieverAndSender[0].getDOS().writeUTF("PRIVATE " + name + " writes to YOU: " + finalTxt);
+          c.getDOS().writeUTF("YOU write to " + pName + finalTxt);
         } catch (IOException e) {
           e.printStackTrace();
         }
-      });
-    }
+
+      } else {
+        try {
+          c.getDOS().writeUTF("WRONG USERNAME" + pName);
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
+      }
+    });
   }
 
   @Override
@@ -103,6 +145,8 @@ public class Server implements Runnable {
       System.out.println("соединение завершено");
       if (connectionList.contains(connectedClient)) {
         connectionList.remove(connectedClient);
+        connectionListNames.remove(name);
+
         System.out.println("клиент удален");
       }
     } catch (Exception e) {

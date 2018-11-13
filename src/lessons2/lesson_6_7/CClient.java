@@ -1,4 +1,4 @@
-package lessons2.lesson_6;
+package lessons2.lesson_6_7;
 
 import java.io.*;
 import java.net.Socket;
@@ -34,7 +34,6 @@ public class CClient {
     } catch (IOException e) {
       e.printStackTrace();
     }
-
 
 
   }

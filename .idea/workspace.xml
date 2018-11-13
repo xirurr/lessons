@@ -6,17 +6,30 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/lessons2/lesson_6/CClient.java" />
+    <bookmark url="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/CClient.java" />
   </component>
   <component name="ChangeListManager">
     <list id="7708400e-1b7f-4d46-84be-e8673dd62ae7" name="Крестики-нолики." comment="Крестики-нолики.&#10;&#10;(cherry picked from commit 598894a)">
       <changelist_data name="xirurr" email="xirurr@gmail.com" date="1538416244000" />
     </list>
     <list default="true" id="68b22740-c763-4389-b4a0-f8707db489f7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lessons2/lesson_6/ConnectionWaiter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lessons/lessons2/lesson_6/ConnectionWaiter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lessons/lessons2/lesson_6/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lessons/lessons2/lesson_6/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_6/ConnectionWaiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_6/ConnectionWaiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_6/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_6/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainDB.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/MainChatWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lessons/lessons2/lesson_6/CClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lessons/lessons2/lesson_6/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lessons/lessons2/lesson_6/ConnectionWaiter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lessons/lessons2/lesson_6/Reader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lessons/lessons2/lesson_6/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lessons/lessons2/lesson_6/Writer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_6/CClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_6_7/CClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_6/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_6/ConnectionWaiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_6_7/ConnectionWaiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_6/Reader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_6/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons2/lesson_6_7/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons2/lesson_6/Writer.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,75 +59,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Server.java">
+      <file leaf-file-name="MainChatWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/MainChatWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="101" column="34" lean-forward="true" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
+            <state relative-caret-position="170">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#sendMsg#0;class#Controller#0" />
+                <element signature="method#sendFromKey#0;class#Controller#0" />
+                <element signature="method#sendNow#0;class#Controller#0" />
+                <element signature="e#1526#1527#0" expanded="true" />
+                <element signature="e#1541#1542#0" expanded="true" />
+                <element signature="method#reg#0;class#Controller#0" />
+                <element signature="method#showAlert#0;class#Controller#0" />
+                <element signature="e#3415#3502#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/sample.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="110" selection-start-line="110" selection-end-line="110" />
+              <folding>
                 <element signature="method#Server#0;class#Server#0" />
-                <element signature="method#auth#0;class#Server#0" />
+                <element signature="method#checkAUTH#0;class#Server#0" />
                 <element signature="method#broadCast#0;class#Server#0" />
                 <element signature="e#2155#2293#0" />
+                <element signature="e#3045#3242#0" />
+                <element signature="e#3206#3366#0" />
+                <element signature="method#run#0;class#Server#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ConnectionWaiter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/ConnectionWaiter.java">
+        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/ConnectionWaiter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            <state relative-caret-position="153">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#156#157#0" expanded="true" />
-                <element signature="e#177#178#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Reader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#run#0;class#Reader#0" />
+                <element signature="method#startServ#0;class#ConnectionWaiter#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="CClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/CClient.java">
+        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/CClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="238">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#135#136#0" expanded="true" />
-                <element signature="e#157#158#0" expanded="true" />
-                <element signature="e#186#187#0" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-76">
-              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#CClient#0;class#CClient#0" />
               </folding>
             </state>
           </provider>
@@ -179,6 +198,14 @@
         <option value="$PROJECT_DIR$/src/lessons2/lesson_6/CClient.java" />
         <option value="$PROJECT_DIR$/src/lessons2/lesson_6/ConnectionWaiter.java" />
         <option value="$PROJECT_DIR$/src/lessons2/lesson_6/Server.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6/JFX/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6/JFX/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6_7/ConnectionWaiter.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6_7/CClient.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6_7/Server.java" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/Controller.java" />
       </list>
     </option>
   </component>
@@ -197,7 +224,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="19" />
+    <option name="y" value="12" />
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -225,6 +254,12 @@
               <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
               <item name="lessons" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lessons2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -232,7 +267,24 @@
               <item name="lessons" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lessons2" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_6" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_6_7" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lessons2" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_6_7" type="462c0819:PsiDirectoryNode" />
+              <item name="JFX" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lessons2" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_6_7" type="462c0819:PsiDirectoryNode" />
+              <item name="JFX" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
@@ -291,19 +343,24 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="C:/sqlite-jdbc-3.25.2.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/10112018" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\YandexDisk\GIT\lessons" />
+      <recent name="D:\YandexDisk\GIT\lessons\src\lessons2\lesson_6\JFX" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="lesson2" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\YandexDisk\GIT\lessons\src\lessons2\lesson_6\JFX" />
       <recent name="D:\YandexDisk\GIT\lessons\src" />
       <recent name="D:\YandexDisk\GIT\lessons\src\lesson2\lesson_1" />
       <recent name="D:\YandexDisk\GIT\lessons\src\Lesson_8" />
@@ -321,7 +378,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConnectionWaiter">
+  <component name="RunManager">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="10" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -330,7 +387,7 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lessons2.lesson_6.*" />
+          <option name="PATTERN" value="lessons2.lesson_6_7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -338,12 +395,25 @@
     <configuration name="ConnectionWaiter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="10" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_6.ConnectionWaiter" />
+      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_6_7.ConnectionWaiter" />
       <module name="lessons" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lessons2.lesson_6.*" />
+          <option name="PATTERN" value="lessons2.lesson_6_7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="10" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <module name="lessons" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -361,28 +431,15 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Passwords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MainChatWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="10" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_3.Passwords" />
+      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_6_7.JFX.sample.MainChatWindow" />
       <module name="lessons" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lessons2.lesson_3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Phone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="10" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="lessons2.lesson_3.Phone" />
-      <module name="lessons" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lessons2.lesson_3.*" />
+          <option name="PATTERN" value="lessons2.lesson_6_7.JFX.sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -439,19 +496,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="Application.Phone" />
-      <item itemvalue="Application.Passwords" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.ConnectionWaiter" />
       <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.MainChatWindow" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainChatWindow" />
         <item itemvalue="Application.ConnectionWaiter" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Passwords" />
-        <item itemvalue="Application.Phone" />
       </list>
     </recent_temporary>
   </component>
@@ -500,10 +557,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103200000" />
+    <option name="totallyTimeSpent" value="121808000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="683" height="728" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="10" />
@@ -512,16 +569,18 @@
       <window_info anchor="right" id="Palette&#9;" order="14" />
       <window_info id="Image Layers" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.5015129" side_tool="true" weight="0.25684932" />
+      <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.50226927" side_tool="true" weight="0.26712328" />
       <window_info anchor="right" id="Maven Projects" order="15" weight="0.32980332" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.49848714" visible="true" weight="0.2762431" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.4977307" visible="true" weight="0.26712328" />
       <window_info anchor="bottom" id="Version Control" order="16" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32876712" />
       <window_info id="Capture Tool" order="10" />
       <window_info id="Designer" order="8" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.44462278" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.20953101" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32876712" />
       <window_info anchor="right" id="Database" order="13" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.31678084" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info id="UI Designer" order="11" />
@@ -553,7 +612,6 @@
       <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.5015129" side_tool="true" weight="0.25684932" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info id="Favorites" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.31849316" />
       <window_info anchor="right" id="Maven Projects" order="15" />
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20045386" />
     </layout>
@@ -620,7 +678,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="113" />
+      <option name="time" value="114" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -628,11 +686,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/Obstacle.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/Wall.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/Water.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/Cross.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/Cat.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/Dog.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Marathon/MainMarathon.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson2_/lesson_1/Test.java" />
@@ -772,13 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_3/Passwords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="73" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson1/Lesson_8/theGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -850,31 +896,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#run#0;class#Reader#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/css/conf.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_5/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
+        <state relative-caret-position="-416">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="method#main#0;class#Main#0" />
             <element signature="method#counter#0;class#Main#0" />
             <element signature="method#counterSim#0;class#Main#0" />
-            <element signature="class#1535:1829" />
             <element signature="method#checkSumm#0;class#Main#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson1/lesson_4/HomeWork_4.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson1/lesson_3_1/calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-339">
-          <caret line="175" column="40" lean-forward="true" selection-start-line="175" selection-start-column="40" selection-end-line="175" selection-end-column="40" />
+        <state relative-caret-position="-629">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Writer.java">
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_3/Passwords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="221">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson1/lesson_4/HomeWork_4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="187" column="64" lean-forward="true" selection-start-line="187" selection-start-column="64" selection-end-line="187" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/MainChatWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/CClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding>
+            <element signature="method#CClient#0;class#CClient#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -884,66 +984,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/ConnectionWaiter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="153">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#startServ#0;class#ConnectionWaiter#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Reader.java">
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Reader#0" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/CClient.java">
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state relative-caret-position="159">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/ConnectionWaiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="101" column="34" lean-forward="true" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#Server#0;class#Server#0" />
-            <element signature="method#auth#0;class#Server#0" />
+            <element signature="method#checkAUTH#0;class#Server#0" />
             <element signature="method#broadCast#0;class#Server#0" />
             <element signature="e#2155#2293#0" />
+            <element signature="e#3045#3242#0" />
+            <element signature="e#3206#3366#0" />
+            <element signature="method#run#0;class#Server#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lessons2/lesson_6_7/JFX/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+          <folding>
+            <element signature="method#sendMsg#0;class#Controller#0" />
+            <element signature="method#sendFromKey#0;class#Controller#0" />
+            <element signature="method#sendNow#0;class#Controller#0" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1541#1542#0" expanded="true" />
+            <element signature="method#reg#0;class#Controller#0" />
+            <element signature="method#showAlert#0;class#Controller#0" />
+            <element signature="e#3415#3502#0" />
           </folding>
         </state>
       </provider>
