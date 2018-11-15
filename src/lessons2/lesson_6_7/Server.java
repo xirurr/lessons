@@ -71,6 +71,8 @@ public class Server implements Runnable {
           connectedClient = new CClient(sockA, rs.getString(1));
           connectionListNames.add(rs.getString(1));
           connectionList.add(connectedClient);
+          connectionListNames.sort(String::compareTo);
+          sysBroadBast("/NEWUSER"+connectionListNames);
           return true;
         } else {
           DOS.writeUTF("!u are not authorized");
@@ -88,9 +90,14 @@ public class Server implements Runnable {
   void broadCast() throws IOException {
     while (true) {
       String txt = DIS.readUTF();
-      if (txt.indexOf("/") == 0 && txt.split(" ")[0].equals("/w")) {
+      if (txt.indexOf("/w ") == 0 ) {
         whisper(txt);
-      } else
+      }
+      else if (txt.indexOf("/NEWUSER")==0){
+        continue;
+      }
+
+      else
         connectionList.forEach(o -> {
           try {
             o.getDOS().writeUTF(name + ":" + txt);
@@ -99,6 +106,15 @@ public class Server implements Runnable {
           }
         });
     }
+  }
+  void sysBroadBast(String txt) throws IOException {
+        connectionList.forEach(o -> {
+          try {
+            o.getDOS().writeUTF(txt);
+          } catch (IOException e) {
+            e.printStackTrace();
+          }
+        });
   }
 
   void whisper(String whispTxt) {
@@ -125,7 +141,7 @@ public class Server implements Runnable {
 
       } else {
         try {
-          c.getDOS().writeUTF("WRONG USERNAME" + pName);
+          c.getDOS().writeUTF("/WRONGUSERNAME" + pName);
         } catch (IOException e) {
           e.printStackTrace();
         }

@@ -9,26 +9,33 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
   public Button regBtn;
   public TextField login;
   public PasswordField password;
+  public ListView userList;
   Socket sockA = null;
   DataInputStream DIS = null;
   DataOutputStream DOS = null;
   String myname;
   String var;
+  ArrayList<String> blackList;
 
   @FXML
   Button bt1;
@@ -79,6 +86,8 @@ public class Controller implements Initializable {
         outputField.setDisable(false);
         bt1.setDisable(false);
         inputField.setDisable(false);
+        userList.setDisable(false);
+
         reader();
       } else {
         String var2 = DIS.readUTF();
@@ -118,9 +127,9 @@ public class Controller implements Initializable {
           e.printStackTrace();
         }
         VBox vb = new VBox(txt);
-        if (txt.getText().indexOf("WRONG USERNAME") == 0) {
-          String var = txt.getText().replace("WRONG USERNAME", "");
-          showAlert("WRONG USERNAME", "THERE IS NO SUCH USER :" + var);
+
+        if (txt.getText().indexOf("/") == 0) {
+          sysMessage(txt.getText());
           continue;
         }
         if (txt.getText().indexOf(myname) == 0 || txt.getText().indexOf("YOU") == 0) {
@@ -136,6 +145,40 @@ public class Controller implements Initializable {
     reader.start();
   }
 
+  void sysMessage(String vartxt) {
+    String var2 = new String();
+    if (vartxt.indexOf("/WRONGUSERNAME") == 0) {
+      var2 = vartxt.replace("/WRONG USERNAME", "");
+      showAlert("WRONG USERNAME", "THERE IS NO SUCH USER :" + var2);
+    }
+    if (vartxt.indexOf("/NEWUSER") == 0) {
+      var2 = vartxt.replace("/NEWUSER", "");
+      var2 = var2.replace("[", "");
+      var2 = var2.replace("]", "");
+      ArrayList<String> testing = new ArrayList<>(Arrays.asList(var2.split(", ")));
+      userList.getItems().remove(0, userList.getItems().size());
+      for (String var : testing) {
+        Platform.runLater(() -> {
+                  userList.getItems().add(var);
+                }
+        );
+      }
+    }
+  }
+
+  public void addToBlackList(){
+
+  }
+
+  public void mouseToWhisper (MouseEvent e){
+    if (e.getButton()==MouseButton.PRIMARY) {
+      wannaWhisper();
+    }
+  }
+  public void wannaWhisper() {
+      String test = (String) userList.getSelectionModel().getSelectedItem();
+      inputField.setText("/w " + test + " " + inputField.getText());
+  }
   @Override
   public void initialize(URL location, ResourceBundle resources) {
     try {
