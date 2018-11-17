@@ -4,8 +4,7 @@ import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 import java.sql.*;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -17,6 +16,7 @@ public class Server implements Runnable {
   DataOutputStream DOS;
   static List<CClient> connectionList = new Vector<>();
   static List<String> connectionListNames = new Vector<>();
+  Set<String> blackList = new TreeSet<>();
   String name;
   CClient connectedClient = null;
   private static Connection connection;
@@ -72,7 +72,16 @@ public class Server implements Runnable {
           connectionListNames.add(rs.getString(1));
           connectionList.add(connectedClient);
           connectionListNames.sort(String::compareTo);
-          sysBroadBast("/NEWUSER"+connectionListNames);
+          sysBroadBast("/NEWUSER" + connectionListNames);
+          sql = String.format("SELECT blacked FROM account" +
+                  " WHERE name = '%s' AND pwd = '%s'", login, pwd);
+          rs = stmt.executeQuery(sql);
+          System.out.println(Arrays.toString(rs.getString(1).split(",")));
+          if (!Arrays.toString(rs.getString(1).split(",")).equals("[]")) {
+            Collections.addAll(blackList, rs.getString(1).split(","));
+            DOS.writeUTF("/NEWBLACKLIST " + rs.getString(1));
+          }
+          connection.close();
           return true;
         } else {
           DOS.writeUTF("!u are not authorized");
@@ -90,14 +99,24 @@ public class Server implements Runnable {
   void broadCast() throws IOException {
     while (true) {
       String txt = DIS.readUTF();
-      if (txt.indexOf("/w ") == 0 ) {
+      if (txt.indexOf("/w ") == 0) {
         whisper(txt);
-      }
-      else if (txt.indexOf("/NEWUSER")==0){
         continue;
       }
-
-      else
+      if (txt.indexOf("/NEWUSER ") == 0) {
+        continue;
+      }
+      if (txt.indexOf("/ALREADY ") == 0) {
+        continue;
+      }
+      if (txt.indexOf("/b ") == 0) {
+        blacklist(txt);
+        continue;
+      }
+      if (txt.indexOf("/br ") == 0) {
+        removeFromBlacklist(txt);
+        continue;
+      } else
         connectionList.forEach(o -> {
           try {
             o.getDOS().writeUTF(name + ":" + txt);
@@ -107,14 +126,15 @@ public class Server implements Runnable {
         });
     }
   }
+
   void sysBroadBast(String txt) throws IOException {
-        connectionList.forEach(o -> {
-          try {
-            o.getDOS().writeUTF(txt);
-          } catch (IOException e) {
-            e.printStackTrace();
-          }
-        });
+    connectionList.forEach(o -> {
+      try {
+        o.getDOS().writeUTF(txt);
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+    });
   }
 
   void whisper(String whispTxt) {
@@ -133,7 +153,7 @@ public class Server implements Runnable {
       recieverAndSender[1] = c;
       if (recieverAndSender[0] != null) {
         try {
-          recieverAndSender[0].getDOS().writeUTF("PRIVATE " + name + " writes to YOU: " + finalTxt);
+          recieverAndSender[0].getDOS().writeUTF("/PRIVATE " + name + " writes to YOU: " + finalTxt);
           c.getDOS().writeUTF("YOU write to " + pName + finalTxt);
         } catch (IOException e) {
           e.printStackTrace();
@@ -147,6 +167,60 @@ public class Server implements Runnable {
         }
       }
     });
+  }
+
+  void blacklist(String txt) {
+    try {
+      StringBuilder nameToIgnore = new StringBuilder(txt.split(" ")[1]);
+      if (blackList.add(nameToIgnore.toString())) {
+        nameToIgnore.setLength(0);
+        for (String var : blackList) {
+          nameToIgnore.append(var + ",");
+        }
+        Class.forName("org.sqlite.JDBC");
+        connection = DriverManager.getConnection("jdbc:sqlite:mainDB.db");
+        stmt = connection.createStatement();
+        String sql = String.format("UPDATE account SET blacked='%s' WHERE nickname='%s'", nameToIgnore.toString(), name);
+        stmt.executeUpdate(sql);
+        connection.close();
+        DOS.writeUTF("/NEWBLACKLIST " + nameToIgnore.toString());
+      } else {
+        System.out.println(blackList);
+        sysBroadBast("/ALREADY IN BLACK LIST");
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+
+  }
+  void removeFromBlacklist(String txt) {
+    try {
+      StringBuilder nameToRemove = new StringBuilder(txt.split(" ")[1]);
+      if (blackList.remove(nameToRemove.toString())) {
+        nameToRemove.setLength(0);
+        for (String var : blackList) {
+          nameToRemove.append(var + ",");
+        }
+        Class.forName("org.sqlite.JDBC");
+        connection = DriverManager.getConnection("jdbc:sqlite:mainDB.db");
+        stmt = connection.createStatement();
+        String sql = String.format("UPDATE account SET blacked='%s' WHERE nickname='%s'", nameToRemove.toString(), name);
+        stmt.executeUpdate(sql);
+        connection.close();
+        DOS.writeUTF("/NEWBLACKLIST " + nameToRemove.toString());
+      } else {
+
+
+
+        System.out.println(blackList);
+        sysBroadBast("/ALREADY NOT IN BLACK LIST");
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+
   }
 
   @Override

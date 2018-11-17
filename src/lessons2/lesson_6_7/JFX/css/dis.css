@@ -1,3 +1,6 @@
 #userList .list-cell {
     -fx-alignment:center-right ;
 }
+#lb .text-field{
+    -fx-highlight-text-fill: RED;
+}

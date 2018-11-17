@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lessons2.lesson_6_7.JFX.sample.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lessons2.lesson_6_7.JFX.sample.Controller" onKeyPressed="#sendFromKey">
     <stylesheets><URL value="@/lessons2/lesson_6_7/JFX/css/dis.css" /></stylesheets>
     <center>
         <AnchorPane opacity="0.68" prefHeight="353.0" prefWidth="600.0" BorderPane.alignment="CENTER">
@@ -21,15 +21,16 @@
                <ContextMenu>
                  <items>
                    <MenuItem mnemonicParsing="false" onAction="#wannaWhisper" text="whisper" />
-                     <MenuItem mnemonicParsing="false" text="blacklist" />
+                     <MenuItem mnemonicParsing="false" text="add to BlackList"  onAction="#wannaBlackList" />
+                     <MenuItem fx:id="removeFromBlackListMenuItem" disable="true" mnemonicParsing="false" text="remove From BlackList"  onAction="#removeFromBlackList" />
                  </items>
                </ContextMenu>
             </contextMenu></ListView>
                 <ListView fx:id="outputField" disable="true" prefHeight="355.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0" />
             <HBox fx:id="authBox" prefHeight="100.0" prefWidth="200.0">
-                  <TextField fx:id="login" onKeyPressed="#sendFromKey" />
-                  <PasswordField fx:id="password" onKeyPressed="#sendFromKey" />
-                  <Button fx:id="regBtn" mnemonicParsing="false" onAction="#regKey" onKeyPressed="#sendFromKey" text="Button" />
+                  <TextField fx:id="login" />
+                  <PasswordField fx:id="password" />
+                  <Button fx:id="regBtn" mnemonicParsing="false" onAction="#regKey" text="Button" />
             </HBox>
         </AnchorPane>
     </center>
@@ -39,8 +40,8 @@
                 <Insets />
             </opaqueInsets>
             <children>
-                <TextField fx:id="inputField" disable="true" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#sendFromKey" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                <Button fx:id="bt1" disable="true" layoutX="534.0" layoutY="10.0" mnemonicParsing="false" onAction="#sendMsg" onKeyPressed="#sendFromKey" text="Button" AnchorPane.rightAnchor="25.0" />
+                <TextField fx:id="inputField" disable="true" minHeight="-Infinity" minWidth="-Infinity"  AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="bt1" disable="true" layoutX="534.0" layoutY="10.0" mnemonicParsing="false" onAction="#sendMsg"  text="Button" AnchorPane.rightAnchor="25.0" />
             </children>
         </AnchorPane>
     </bottom>
