@@ -127,6 +127,8 @@ public class Server implements Runnable {
     }
   }
 
+
+
   void sysBroadBast(String txt) throws IOException {
     connectionList.forEach(o -> {
       try {
